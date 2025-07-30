@@ -8,7 +8,12 @@
     "test": "jest",
     "lint": "eslint",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "check-before-push": "pnpm lint && pnpm format:check && pnpm test",
+    "prepare": "simple-git-hooks"
+  },
+  "simple-git-hooks": {
+    "pre-push": "pnpm run check-before-push"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +29,7 @@
     "globals": "^16.3.0",
     "jest": "^30.0.5",
     "prettier": "^3.6.2",
+    "simple-git-hooks": "^2.13.0",
     "ts-jest": "^29.4.0",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.38.0"

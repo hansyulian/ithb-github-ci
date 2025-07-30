@@ -34,6 +34,9 @@ importers:
       prettier:
         specifier: ^3.6.2
         version: 3.6.2
+      simple-git-hooks:
+        specifier: ^2.13.0
+        version: 2.13.0
       ts-jest:
         specifier: ^29.4.0
         version: 29.4.0(@babel/core@7.28.0)(@jest/transform@30.0.5)(@jest/types@30.0.5)(babel-jest@30.0.5(@babel/core@7.28.0))(jest-util@30.0.5)(jest@30.0.5(@types/node@24.1.0))(typescript@5.8.3)
@@ -2600,6 +2603,13 @@ packages:
       }
     engines: { node: '>=14' }
 
+  simple-git-hooks@2.13.0:
+    resolution:
+      {
+        integrity: sha512-N+goiLxlkHJlyaYEglFypzVNMaNplPAk5syu0+OPp/Bk6dwVoXF6FfOw2vO0Dp+JHsBaI+w6cm8TnFl2Hw6tDA==,
+      }
+    hasBin: true
+
   slash@3.0.0:
     resolution:
       {
@@ -4700,6 +4710,8 @@ snapshots:
   signal-exit@3.0.7: {}
 
   signal-exit@4.1.0: {}
+
+  simple-git-hooks@2.13.0: {}
 
   slash@3.0.0: {}
 
