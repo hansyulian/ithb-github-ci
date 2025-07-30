@@ -23,3 +23,9 @@ jobs:
     uses: ./.github/workflows/shared-setup.yml
     with:
       run_step: pnpm lint
+
+  format:
+    needs: build
+    uses: ./.github/workflows/shared-setup.yml
+    with:
+      run_step: pnpm format:check
