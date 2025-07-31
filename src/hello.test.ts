@@ -8,5 +8,5 @@ test('sayHello returns correct greeting 2', () => {
 });
 
 test('sayHello returns correct greeting 3', () => {
-  expect(sayHello('Hans')).toBe('Hello, Han!');
+  expect(sayHello('Hans Yulian')).toBe('Hello, Hans Yulian!');
 });
